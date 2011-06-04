@@ -5,4 +5,15 @@
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
+
+
+    #define DEBUG
+    #ifdef DEBUG
+        #define Log(fmt, ...) NSLog((@"%s [Line %d]: " fmt),__PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+    #else
+        #define Log(fmt, ...)
+    #endif
+
+    #import "UINavigationBar+IECustomDrawRect.h"
+
 #endif
