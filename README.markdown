@@ -1,0 +1,1 @@
+solution to correct do custom drawing on `UINavigationBar`. Read more on [my blog post](http://evsukov.posterous.com/custom-drawing-of-uinavigationbar-done-right)
